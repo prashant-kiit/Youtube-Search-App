@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    </link>
+    <title>Youtube Search</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1> Youtube Search </h1>
+    </div>
+
+    <br>
+
+    <div class="api">
+        <br>
+        <input id="key" value="Enter your API Key" disabled type="text" placeholder="Enter your API Key" />
+        <br>
+        <button id="save-button" disabled onclick="saveApi()">Save Api Key</button>
+    </div>
+
+    <br>
+
+    <div class="topic">
+        <br>
+        <input id="query" value='' disabled type="text" placeholder="Topic" />
+        <br>
+        <button id="search-button" disabled onclick="search()">Search</button>
+    </div>
+    
+    <br>
+    <br>
+
+    <div id = "error"></div>
+
+    <br>
+    <br>
+
+    <hr>
+    <hr>
+
+    <div class="search-container" id="search-container"></div>
+
+    <div class="watch-container" id="watch-container">
+        <div id="watch-subcontainer">
+
+        </div>
+    </div>
+
+    <footer>
+        <h5> Youtube Filter </h5>
+    </footer>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- <div id="test">
+
+    </div> -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="main.js"></script>
+    <script src="search.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=loadAPIClientInterfaces"></script>
+
+</body>
+
+</html>

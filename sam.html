@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="submit" value="Submit" id="submit">
+    <div id="player"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+    // let marker = 0;
+    document.getElementById('submit').addEventListener('click', () => {
+    document.getElementById("player").remove();
+    var div = document.createElement('div');
+    div.id = 'player';
+    div.innerHTML = 'This is a new div for player';
+    document.body.appendChild(div);
+        return new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: 'M7lc1UVf-VE',
+            events: {
+                onReady: e => e.target.playVideo()
+            }
+        });
+    });
+</script>
+</body>
+</html>
