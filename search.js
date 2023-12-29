@@ -48,8 +48,7 @@ function search() {
   var q = document.getElementById('query').value;
   console.log(secret.getKey());
   var request = gapi.client.youtube.search.list({
-    key: secret.getKey(), // AIzaSyDNB6Sa8Drn4Nni60j1Qg1YaaEXKk_Mows
-    // AIzaSyDBa_jJLVScjcwsxOieJlgrmUXmtF1gCS4
+    key: secret.getKey(), 
     q: q,
     part: 'id, snippet',
     type: 'video',
