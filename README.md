@@ -1,6 +1,6 @@
 Steps:
 1. Create API Key for Youtube Data API on https://console.cloud.google.com.
-2. Launch the url .
+2. Launch the url https://prashant-kiit.github.io/Youtube-Search-App.
 3. Enter the API key and click Save API Key.
 4. Enter the topic and click search button.
 5. Click on watch button to watch the corresponding video.
